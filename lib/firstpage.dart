@@ -7,8 +7,8 @@ class Firstpage extends StatefulWidget {
 
 class _FirstPageState extends State<Firstpage> {
   TextEditingController todoController = TextEditingController();
-  List<String> tasks = [];  // A list to store tasks.
-  int? editingIndex;  // This will track the index of the task being edited.
+  List<String> tasks = [];  
+  int? editingIndex;  
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class _FirstPageState extends State<Firstpage> {
         ),
       ),
       body: ListView.builder(
-        itemCount: tasks.length,  // Display the length of the tasks list.
+        itemCount: tasks.length,  
         itemBuilder: (context, index) {
           return Container(
             padding: EdgeInsets.all(10),
